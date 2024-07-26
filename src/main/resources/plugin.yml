@@ -1,11 +1,7 @@
-name: PLUGIN_NAME
+name: Raiders
 version: 1.0
-main: me.yourname.pluginname.Main
+main: me.svr.raiders.Main
 commands:
-  mycommand:
-    description: mycommand
-    usage: '/mycmd'
-    aliases: [mycommand]
-    permission: me.main
-    permission-message: You do not have permission to use this command
-
+  spawnentity:
+    description: Spawns a custom entity at your location
+    usage: /spawnentity <type>

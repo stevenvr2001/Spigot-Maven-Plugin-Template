@@ -1,1 +1,47 @@
-# Enter config here
+# Configuratie voor custom entities
+
+entities:
+ raider:
+  type: PILLAGER
+  name: Raider
+  max-health: 80
+  movementspeed: 1
+  damage: 1 # health in hearts lost when hit
+  spawn_chance: 0.05
+  canBreakDoors: true
+  spawn_interval: 600 # in ticks (30 sec)
+  # Equipment
+  weapons:
+    - item_in_hand: CROSSBOW # Crossbow in place of IRON_AXE
+    - item_in_offhand: SHIELD
+  armorItems:
+    - feet: leather_boots
+    - legs: leather_leggings
+    - chest: leather_chestplate
+    - head: chainmail_helmet
+  activeEffects:
+    - id: bad_omen
+      amplifier: 0
+      duration: 999999
+  raider-boss:
+  type: PILLAGER
+  name: Raider Boss
+  max-health: 120
+  movementspeed: 1
+  damage: 1 # health in hearts lost when hit
+  spawn_chance: 0.05
+  canBreakDoors: true
+  spawn_interval: 600 # in ticks (30 sec)
+  # Equipment
+  weapons:
+    - item_in_hand: CROSSBOW # Crossbow in place of IRON_AXE
+    - item_in_offhand: SHIELD
+  armorItems:
+    - feet: chainmail_boots
+    - legs: chainmail_leggings
+    - chest: iron_chestplate
+    - head: chainmail_helmet
+  activeEffects:
+    - id: bad_omen
+      amplifier: 0
+      duration: 999999

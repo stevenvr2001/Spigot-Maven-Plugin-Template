@@ -1,0 +1,42 @@
+pillager:
+  general:
+    custom-name: "&ePillager"
+    custom-name-visible: true
+    is-silent: false
+    is-invulnerable: false
+    is-glowing: false
+    fire-ticks: 0
+    gravity: true
+    remove-when-far-away: true
+    is-persistent: false
+  attributes:
+    max-health: 20.0
+    movement-speed: 0.25
+    attack-damage: 2.0
+    attack-speed: 4.0
+  equipment:
+    main-hand:
+      item: IRON_SWORD
+      enchantments:
+        - DURABILITY: 1
+    off-hand:
+      item: SHIELD
+      enchantments:
+        - DURABILITY: 1
+    armor:
+      helmet: CHAINMAIL_HELMET
+      chestplate: CHAINMAIL_CHESTPLATE
+      leggings: CHAINMAIL_LEGGINGS
+      boots: CHAINMAIL_BOOTS
+  potion-effects:
+    - type: INCREASE_DAMAGE
+      duration: 10000
+      amplifier: 1
+  ai:
+    can-pickup-items: false
+    target: null
+  other:
+    can-break-doors: false
+    is-baby: false
+    is-sleeping: false
+    is-left-handed: false
